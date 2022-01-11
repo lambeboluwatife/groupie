@@ -1,0 +1,20 @@
+[
+    {
+        "_id":{"$oid":"610aceddf57da736c46f0e51"},
+        "fullname":"Lambe Boluwatife",
+        "username":"Danibholie",
+        "email":"boluwatifelambe@gmail.com",
+        "password":"$2a$10$FWC9bSyRk1B.bE0l4qB9A.Ud/UV8ez/qlqsD5FsJy6D7O40/e4ItW",
+        "date":{"$date":"2021-08-04T17:31:09.719Z"},
+        "__v":0
+    },
+    {
+        "_id":{"$oid":"610aceddf57da736c46f0e51"},
+        "fullname":"Lambe Boluwatife",
+        "username":"Danibholie",
+        "email":"boluwatifelambe@gmail.com",
+        "password":"$2a$10$FWC9bSyRk1B.bE0l4qB9A.Ud/UV8ez/qlqsD5FsJy6D7O40/e4ItW",
+        "date":{"$date":"2021-08-04T17:31:09.719Z"},
+        "__v":0
+    }
+]
