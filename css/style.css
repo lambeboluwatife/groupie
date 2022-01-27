@@ -81,6 +81,10 @@ p {
   margin: 10px 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--primary-color);
@@ -177,6 +181,9 @@ p {
   color: #fff;
   border: none;
   border-radius: 5px;
+}
+.btn-result {
+  padding: 5px 20px;
 }
 
 .btn-outline {

@@ -42,8 +42,9 @@ search.addEventListener("click", (event) => {
             groupType.innerHTML = `Group Type: ${group.group_type}`;
 
             const inviteUrl = document.createElement("a");
-            inviteUrl.classList.add("inviteUrl");
-            inviteUrl.innerHTML = `Invite Url: ${group.invite_url}`;
+            inviteUrl.classList.add("btn", "btn-result");
+            inviteUrl.href = `${group.invite_url}`;
+            inviteUrl.innerHTML = `Join Group`;
 
             div.appendChild(groupName);
             div.appendChild(description);
