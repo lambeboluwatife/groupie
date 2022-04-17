@@ -1,0 +1,142 @@
+[
+    {
+      "name": "Andela",
+      "description": "Javascript for beginners",
+      "course": "Javascript",
+      "group_type": "Whatsapp",
+      "invite_url": "wa.andela/js_beginner"
+    },
+    {
+        "name": "Andela",
+        "description": "Advanced Javascript",
+        "course": "Javascript",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.andela/js_advanced"
+      },
+      {
+        "name": "Andela",
+        "description": "HTML for beginers",
+        "course": "HTML",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.andela/html_beginner"
+      },
+      {
+        "name": "Andela",
+        "description": "Advanced HTML",
+        "course": "HTML",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.andela/html_advanced"
+      },
+      {
+        "name": "Andela",
+        "description": "CSS for beginers",
+        "course": "CSS",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.andela/css_beginner"
+      },
+      {
+        "name": "Andela",
+        "description": "Advanced CSS",
+        "course": "CSS",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.me/css_advanced"
+      },
+      {
+        "name": "TalentQL",
+        "description": "All to know about Nodejs",
+        "course": "Nodejs",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.talentql/nodejs"
+      },
+      {
+        "name": "TalentQL",
+        "description": "Issues on Nodejs",
+        "course": "Nodejs",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.talentql/nodejs_issues"
+      },
+      {
+        "name": "Altschool Africa",
+        "description": "Beginner guide to HTML",
+        "course": "HTML",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.alt/html_beginner"
+      },
+      {
+        "name": "Altschool Africa",
+        "description": "Beginner guide to CSS",
+        "course": "CSS",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.alt/js_beginner"
+      },
+      {
+        "name": "Altschool Africa",
+        "description": "Beginner guide to javascript",
+        "course": "Javascript",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.alt/js_beginner"
+      },
+      {
+        "name": "Progate",
+        "description": "Developers Hangout",
+        "course": "Q and A",
+        "group_type": "Discord",
+        "invite_url": "discord.progate/dev_hangout"
+      },
+      {
+        "name": "Goodland",
+        "description": "Helping developers relocate.",
+        "course": "Q and A",
+        "group_type": "Discord",
+        "invite_url": "discord.goodland/relocate"
+      },
+      {
+        "name": "Goodland",
+        "description": "Helping developers relocate.",
+        "course": "Q and A",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.goodland/relocate"
+      },
+      {
+        "name": "Students Developers Community",
+        "description": "For developers still in school",
+        "course": "Q and A",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.sdc/students"
+      },
+      {
+        "name": "Frontend Mentors",
+        "description": "Frontend in preview",
+        "course": "HTML, CSS, Javascript",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.fm/frontend"
+      },
+      {
+        "name": "Enyata",
+        "description": "Understanding how fullstack works.",
+        "course": "Q and A",
+        "group_type": "Discord",
+        "invite_url": "discord.enyata/fullstack"
+      },
+      {
+        "name": "Backend Mentors",
+        "description": "Backend in preview",
+        "course": "Nodejs, MongoDB, Express",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.fm/frontend"
+      },
+      {
+        "name": "Reactjs Developers",
+        "description": "Understanding Reactjs",
+        "course": "Reactjs",
+        "group_type": "Slack",
+        "invite_url": "slack.archive.fm/frontend"
+      },
+      {
+        "name": "Developers Community ",
+        "description": "A safe space to share any coding issues and challenges.",
+        "course": "Q and A",
+        "group_type": "Whatsapp",
+        "invite_url": "wa.me/css_advanced"
+      }
+  ]

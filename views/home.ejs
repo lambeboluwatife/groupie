@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groupie | Home</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Groupie</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/groups">Groups</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/users/login">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Introduction</h1>
+          <p>
+            Looking to join a community of like-minded individuals, looking for
+            a community or group to teach, learn, observe, ask and answer
+            questions on particular topic or course in general. Then, Groupie is
+            here for you.
+          </p>
+          <p>
+            We'll give you the best groups or communities to join on your field
+            of study, interest or preference. The groups or communities varies
+            from WhatsApp, Slack, Discord, Telegram any social groups and more
+            with links to join the group and be part of the community.
+          </p>
+
+          <p>
+            All you just have to do is search your field of study or interest
+            and we'll do the rest.
+          </p>
+        </div>
+
+        <div class="showcase-form card">
+          <% if(currentUser){ %>
+          <div style="display: inline">
+            <h3 style="float: left"><%= currentUser.username %></h3>
+            <h6 style="color: green; float: right">Online</h6>
+          </div>
+          <% } %>
+          <br />
+          <h2>Be a Groupie</h2>
+          <div class="msg"></div>
+          <form>
+            <div class="form-control">
+              <input class="name" type="text" name="name" placeholder="Name" />
+            </div>
+
+            <div class="form-control">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="form-control">
+              <select name="preference" class="course">
+                <option selected disabled>Preference</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Reactjs">Reactjs</option>
+                <option value="Nodejs">Nodejs</option>
+                <option value="Q and A">Q and A</option>
+              </select>
+            </div>
+            <input
+              type="submit"
+              value="Search"
+              class="btn btn-primary search"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Showcase -->
+
+    <br />
+    <br />
+    <br />
+    <!-- Data -->
+    <section class="data-result">
+      <div class="container grid grid-4 text-center"></div>
+    </section>
+    <!-- Data -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groupie | Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/sign-up.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Groupie</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#groups">Groups</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/users/login">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Create Form -->
+    <div class="container">
+      <div class="sign-up-form card">
+        <h2>Create Group</h2>
+        <% include ('../partials/messages') %>
+        <form action="/groups" method="POST">
+          <div class="form-group">
+            <label for="groupName">Group Name</label>
+            <input
+              type="text"
+              id="groupName"
+              name="groupName"
+              class="form-control"
+              placeholder="e.g Greenhack Academy"
+              value="<%= typeof groupName != 'undefined' ? groupName : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              class="form-control"
+              placeholder="e.g A safe space to share any coding issues and challenges."
+              value="<%= typeof description != 'undefined' ? description : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="course">Course</label>
+            <input
+              type="text"
+              id="course"
+              name="course"
+              class="form-control"
+              placeholder="e.g HTML, CSS, JavaScript, and more."
+              value="<%= typeof course != 'undefined' ? course : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="groupType">Group Type</label>
+            <input
+              type="text"
+              id="groupType"
+              name="groupType"
+              class="form-control"
+              placeholder="e.g Slack, WhatsApp, Discord, Telegram, or others."
+              value="<%= typeof groupType != 'undefined' ? groupType : '' %>"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="inviteUrl">Invite URL</label>
+            <input
+              type="text"
+              id="inviteUrl"
+              name="inviteUrl"
+              class="form-control"
+              placeholder="e.g https://chat.whatsapp.com/greenhackAcademy"
+              value="<%= typeof inviteUrl != 'undefined' ? inviteUrl : '' %>"
+            />
+          </div>
+
+          <button type="submit" class="btn">Create</button>
+        </form>
+        <a href="/groups">Back</a>
+      </div>
+    </div>
+    <!-- Create Form -->
+  </body>
+</html>

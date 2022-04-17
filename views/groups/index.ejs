@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groupie</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="BOOTSTRAP/css/bootstrap.min.css" /> -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Groupie</h1>
+        <nav>
+          <ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/groups/index">Groups</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="/users/login">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <div class="create-group">
+        <a href="groups/new" class="btn">Create Group</a>
+    </div>
+
+    <!-- Data -->
+    <section class="data-result">
+      <div class="container grid grid-4 text-center">
+        <% groups.forEach((group) => { %>
+        <div class="result-style card">
+          <h4 class="groupName"><%= group.groupName %></h4>
+          <h4 class="description">Description: <%= group.description %></h4>
+          <h4 class="course">Course: <%= group.course %></h4>
+          <h4 class="groupType">Group Type: <%= group.groupType %></h4>
+          <a href="<%= group.inviteUrl %>" class="btn btn-result">Join Group</a>
+        </div>
+        <%})%>
+      </div>
+    </section>
+    <!-- Data -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

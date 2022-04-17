@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groupie | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">Groupie</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/groups">Groups</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="/users/logout">Sign out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Dashboard -->
+    <section class="dashboard my-4">
+      <div class="dashboard-container grid grid-3">
+        <div class="p-3">
+          <nav>
+            <ul>
+              <li><a class="text-primary" href="#">Dashboard</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card">
+          <h3>Hello, <%= username %></h3>
+          <p>Welcome back and what are your interest?</p>
+
+          <h3>Here are your group(s)</h3>
+          <div class="container grid text-center">
+            <% groups.forEach((group) => {%> <%
+            if(group.author.id.equals(currentUser._id)) { %>
+            <div class="result-style card">
+              <h4 class="groupName"><%= group.groupName %></h4>
+              <h4 class="description">Description: <%= group.description %></h4>
+              <h4 class="course">Course: <%= group.course %></h4>
+              <h4 class="groupType">Group Type: <%= group.groupType %></h4>
+              <a href="<%= group.inviteUrl %>" class="btn btn-result"
+                >Join Group</a
+              >
+            </div>
+            <% } %><%});%>
+          </div>
+
+          <div class="create-group">
+            <a href="groups/new" class="btn">Create Group</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3><%= name %></h3>
+          <ul>
+            <li>Windows 10, Mac OSX, Linux</li>
+            <li>Node.js v12 or higher</li>
+          </ul>
+
+          <h3>Install</h3>
+          <p>Mac (Homebrew)</p>
+          <pre><code>$ brew install loruki-cli</code></pre>
+          <p>NPM</p>
+          <pre><code>$ npm install loruki-cli</code></pre>
+          <p>Yarn</p>
+          <pre><code>$ yarn install loruki-cli</code></pre>
+        </div>
+      </div>
+    </section>
+    <!-- Dashboard -->
+  </body>
+</html>

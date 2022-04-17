@@ -1,0 +1,21 @@
+.sign-up {
+  margin-top: 50px;
+}
+
+.sign-up a {
+  color: #047aed;
+}
+
+.sign-up-form .form-control {
+  margin: 10px 0;
+}
+
+.sign-up-form input[type="password"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="text"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
