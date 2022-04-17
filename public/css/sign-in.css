@@ -1,0 +1,20 @@
+.sign-in {
+  margin-top: 50px;
+}
+
+.sign-in a {
+  color: #047aed;
+}
+
+.sign-in-form .form-control {
+  margin: 10px 0;
+}
+
+.sign-in-form input[type="password"],
+.sign-in-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
